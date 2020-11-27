@@ -9,6 +9,7 @@ class Heap():
 
     def heappush(self, x):
         self.data.append(x)
+        self.sift_up(len(self.data) - 1)
 
     def heappop(self, i=0):
         self.data[i], self.data[-1] = self.data[-1], self.data[i]
@@ -41,6 +42,8 @@ class Heap():
                 self.data[i], self.data[child_min]
             )
             self.sift_down(child_min)
+
+
 
 
 if __name__ == '__main__':
