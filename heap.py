@@ -44,8 +44,6 @@ class Heap():
             self.sift_down(child_min)
 
 
-
-
 if __name__ == '__main__':
     arr = [4, 6, 7, 8, 9, 1, 10, 3, 5, 2]
     heap = Heap()
